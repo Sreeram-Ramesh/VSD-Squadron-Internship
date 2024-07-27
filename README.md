@@ -93,3 +93,101 @@ A Github repo to keep the progress of my learnings and to complete various tasks
   <br>
   
 </details>
+
+<details>
+<summary>Task 2</summary>
+  
+  <br>
+    1. Run SPIKE simulation and observation with -O1 and -Ofast.<br>
+    2. Write a simple C application and compile it with RISC-V gcc / SPIKE.<br>
+    
+  <br>
+
+  ### Commands to compile using RISCV:
+
+  <br>
+    1. To run the SPIKE simulation.
+
+  <br>
+
+      spike pk sum1ton.o
+
+  <br>
+
+  <img src="./Media/RiscBasedSPIKE.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+    2. To debug sections of object code.
+
+  <br>
+
+    spike -d pk sum1ton.o
+
+  <br>
+    3. To run the Program Counter until we want to run the programs manually.
+
+  <br>
+  
+    : until pc 0 100b0
+
+  <br>
+
+  <br>
+
+  <img src="./Media/SpikeDebug1.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+
+  <img src="./Media/SpikeDebug2.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+    4. To find the contents of a register.
+
+  <br>
+
+    : reg 0 a0
+
+  <br>
+
+  <br>
+
+  <img src="./Media/SpikeA2Contents.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+    Press 'Enter' to run the next instructions.
+
+  <br>
+
+  <br>
+
+  <img src="./Media/SpikeA2Ins.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+    lui - Load Upper Immediate [31:12]
+
+  <br>
+
+  <br>
+  
+  <img src="./Media/SpikeSPContents.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+    addi - Add Immediate, -16 in dec which is 10 in hexa, basically 10 sub from the stack pointer.
+
+  <br>
+
+  <br>
+  
+</details>
