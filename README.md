@@ -185,6 +185,71 @@ A Github repo to keep the progress of my learnings and to complete various tasks
 
   <br>
     addi - Add Immediate, -16 in dec which is 10 in hexa, basically 10 sub from the stack pointer.
+    
+  <br>
+
+  <br>
+
+  ### Binary to Decimal Conversion C Application
+
+  <br>
+    Source Code:
+    
+  <br>
+
+  <br>
+
+  <img src="./Media/MyApp1.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+
+  ### Compiling using GCC and Executing.
+
+  <br>
+
+  <br>
+
+  <img src="./Media/MyApp2.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+
+  ### Compiling and executing using RISC V.
+
+  <br>
+  
+  #### SPIKE Simulation:
+
+  <br>
+    Using -O1 Execution.
+
+  <br>
+
+    riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o bintodec.o bintodec.c
+
+  <br>
+
+  <br>
+
+  <img src="./Media/MyAppSpikeO.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+    Using -Ofast Execution.
+
+  <br>
+    
+    riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o bintodec.o bintodec.c
+
+  <br>
+
+  <br>
+
+  <img src="./Media/MyAppSpikeOfast.jpg" width="800" alt="Description of image">
 
   <br>
 
