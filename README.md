@@ -258,3 +258,110 @@ A Github repo to keep the progress of my learnings and to complete various tasks
   <br>
   
 </details>
+
+<details>
+<summary>Task 3</summary>
+  
+  ### RISC V Instruction Types:
+
+  #### 1. R - Type Instructions 
+
+  RISC V defines several arithmetic R-type (Register-register) operations. All operations read the rs1 and rs2 registers as
+  source operands and write the result into register rd. The funct7 and funct3 fields select the type of
+  operation.
+
+  <br>
+
+  <br>
+
+  <img src="./Media/R-Type.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+
+  #### 2. I - Type Instructions
+
+  RISC V defines I-type (Register-immediate) operations, where an arithmetic or logical operation is performed on a 
+  sign extended 12-bit immediate and rs1 register, and places the result in rd. The funct3 field is used to select the type of operation.
+
+  <br>
+
+  <br>
+
+  <img src="./Media/I-Type.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+
+  #### 3. S - Type Instructions
+
+  RISC V is a load-store architecture, where only load and store instructions access memory and
+  arithmetic instructions only operate on CPU registers. It provides a 32-bit address space that is
+  byte-addressed. Load and store instructions transfer a value between the registers and memory. Loads are encoded in
+  the I-type format and stores are S-type. The effective address is obtained by adding register rs1 to the
+  sign-extended 12-bit offset. Loads copy a value from memory to register rd. Stores copy the value in
+  register rs2 to memory.
+
+  <br>
+
+  <br>
+
+  <img src="./Media/S-Type.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+
+  #### 4. B - Type Instructions
+
+  All branch instructions use the B-type instruction format. The 12-bit B-immediate encodes signed offsets in multiples of 2 bytes.
+  The offset is sign-extended and added to the branch instruction's address to give the target address. The conditional branch range is 
+  ±4 KiB. Branch instructions compare two registers.
+
+  <br>
+
+  <br>
+
+  <img src="./Media/B-Type.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+
+  #### 5. U - Type Instructions
+
+  LUI (load upper immediate) is used to build 32-bit constants and uses the U-type format. LUI places the 32-bit U-immediate value into the 
+  destination register rd, filling in the lowest 12 bits with zeros.AUIPC (add upper immediate to pc) is used to build pc-relative addresses and 
+  uses the U-type format. AUIPC forms a 32-bit offset from the U-immediate, filling in the lowest 12 bits with zeros, adding this offset to the address 
+  of the AUIPC instruction, and then placing the   result in register rd.
+
+  <br>
+
+  <br>
+
+  <img src="./Media/U-Type.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+
+  #### 6. J - Type Instructions
+
+  The jump and link (JAL) instruction uses the J-type format, where the J-immediate encodes a signed offset in multiples of 2 bytes. The offset 
+  is sign-extended and added to the address of the jump instruction to form the jump target address. Jumps can therefore target a ±1 MiB range. JAL stores 
+  the instruction address following the jump ('pc'+4) into register rd. The standard software calling convention uses 'x1' as the return address register 
+  and 'x5' as an alternate link register.
+
+  <br>
+
+  <br>
+
+  <img src="./Media/J-Type.jpg" width="800" alt="Description of image">
+
+  <br>
+
+  <br>
+
+</details>
