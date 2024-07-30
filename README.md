@@ -364,4 +364,113 @@ A Github repo to keep the progress of my learnings and to complete various tasks
 
   <br>
 
+  ### Instructions and their 32-bit pattern:
+
+  1. auipc t0, 0x0
+
+  ```
+  imm [31:12]            rd       opcode
+  00000000000000000000   00000    0010111
+
+  ```
+  
+
+  2. addi a1, t0, 32
+
+  ```
+  imm[11:0]      rs1    addi  rd     opcode
+  000000100000   00000  000   00001  0010011
+  ```
+
+  3. li ra, 0
+
+  ```
+  imm[11:0]      rs1    addi  rd     opcode
+  000000000000   00000  000   00001  0000011
+  ```
+
+  4. li sp, 0
+
+  ```
+  imm[11:0]      rs1    addi  rd     opcode
+  000000000000   00000  000   01111  0000011
+  ```
+
+  5. li gp, 0
+
+  ```
+  imm[11:0]      rs1    addi  rd     opcode
+  000000000000   00000  000   10001  0000011
+  ```
+
+  6. li tp, 0
+
+  ```
+  imm[11:0]      rs1    addi  rd     opcode
+  000000000000   00000  000   11001  0000011
+  ```
+
+  7. li t0, 0
+
+  ```
+  imm[11:0]      rs1    addi  rd     opcode
+  000000000000   00000  000   00000  0000011
+  ```
+
+  8. li t1, 0
+
+  ```
+  imm[11:0]      rs1    addi  rd     opcode
+  000000000000   00000  000   00001  0000011
+  ```
+
+  9. li t2, 0
+
+  ```
+  imm[11:0]      rs1    addi  rd     opcode
+  000000000000   00000  000   00010  0000011
+  ```
+
+  10. li s0, 0
+
+  ```
+  imm[11:0]      rs1    addi  rd     opcode
+  000000000000   00000  000   00000  0000011
+  ```
+
+  11. li s1, 0
+
+  ```
+  imm[11:0]      rs1    addi  rd     opcode
+  000000000000   00000  000   00001  0000011
+  ```
+
+  12. li a2, 0
+
+  ```
+  imm[11:0]      rs1    addi  rd     opcode
+  000000000000   00000  000   00010  0000011
+  ```
+
+  13. li a3, 0
+
+  ```
+  imm[11:0]      rs1    addi  rd     opcode
+  000000000000   00000  000   00011  0000011
+  ```
+
+  14. li a4, 0
+
+  ```
+  imm[11:0]      rs1    addi  rd     opcode
+  000000000000   00000  000   00100  0000011
+  ```
+
+  15. li a5, 0
+
+  ```
+  imm[11:0]      rs1    addi  rd     opcode
+  000000000000   00000  000   00101  0000011
+  ```
+
 </details>
